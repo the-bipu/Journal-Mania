@@ -3,4 +3,13 @@
   <h1><%=title%></h1>
   <p><%=content%></p>
 
+    <!-- Inside your post.ejs or another template file -->
+    <form action="/delete/<%= postId %>" method="post">
+      <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+
+    <form action="/edit/<%= postId %>" method="get">
+      <button type="submit" class="btn btn-info">Edit</button>
+    </form>
+
 <%- include("partials/footer"); -%>
