@@ -113,3 +113,9 @@ This project is licensed under the MIT License - see the <u>**LICENSE.md**</u> f
 
 ## Acknowledgments
 - Special thanks to the open-source community for their valuable contributions and inspiration.
+
+- This article helps me to learn the concept of working with the database connection in MongoDB.
+[Mongo-DB connection](https://medium.com/featurepreneur/connect-mongodb-database-to-express-server-step-by-step-53e548bb4967)
+
+- This article helps me to learn the concept to Mongo Atlas and how to use it.
+[Mongo-DB Atlas Working](https://medium.com/featurepreneur/working-mongodb-5ae6a9d53462)
