@@ -15,11 +15,7 @@ const contactContent = "We'd Love to Hear From You! Thank you for choosing Journ
 const app = express();
 
 mongoose
-    .connect(process.env.MONGODB_URI,
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-      })
+    .connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('App connected to database.');
         app.listen(process.env.PORT || 5555, () => {
