@@ -19,7 +19,14 @@
 
 **Journal-Mania** is a web application designed to help you store and manage your daily journal entries. Whether it's a personal diary, work notes, or creative writing, Journal-Mania provides a user-friendly interface for creating, editing, updating, and deleting journal posts. While the website is not yet complete and does not include features like login and registration, it serves as a foundation for future enhancements. This project is from the Web Dev Bootcamp from Angela Yu.
 
-![Screenshot](./images/screenshot.png)
+### Homepage
+![Screenshot](./public/images/Screenshot-1.png)
+
+### Individual Post Page
+![Screenshot](./public/images/Screenshot-2.png)
+
+### Compose Page
+![Screenshot](./public/images/Screenshot-3.png)
 
 ## Features
 
