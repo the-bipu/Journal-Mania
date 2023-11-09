@@ -14,13 +14,21 @@ const contactContent = "We'd Love to Hear From You! Thank you for choosing Journ
 
 const app = express();
 
-mongoose.connect(
-  process.env.MONGODB_URI, 
-  {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-  }
-);
+mongoose
+    .connect(process.env.MONGODB_URI,
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      })
+    .then(() => {
+        console.log('App connected to database.');
+        app.listen(process.env.PORT || 5555, () => {
+            console.log(`App is listening to Port: ${process.env.PORT}`);
+        });
+    })
+    .catch((error) => {
+        console.log(error);
+    });
 
 const Journal = require('./models/journalModel');
 
@@ -40,7 +48,7 @@ let posts = [];
 
 app.get("/", async function(req, res){
   try {
-    const foundPosts = await Journal.find({});
+    const foundPosts = await Journal.find({}).sort({field:-1});
     res.render("home", {
       startingContent: homeStartingContent,
       posts: foundPosts
