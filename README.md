@@ -1,6 +1,6 @@
 # Journal-Mania Website
 
-![Journal-Mania Logo](./images/logo.png)
+![Journal-Mania Logo](./public/images/logo.png)
 
 ## Table of Contents
 
